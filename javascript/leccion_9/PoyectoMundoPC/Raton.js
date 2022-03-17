@@ -1,4 +1,4 @@
-class Raton extends DispotivoEntrada{
+class Raton extends DispositivoEntrada{
     static contadorRatones = 0;
     constructor(tipoEntrada, marca){
         super(tipoEntrada, marca);
@@ -8,6 +8,6 @@ class Raton extends DispotivoEntrada{
         return this._idRaton;
     }
     toString(){
-        return `Raton: [idRaton: ${this.idRaton}]`+ super.toString();
+        return `Raton: [idRaton: ${this.idRaton} `+ super.toString();
     }
 }

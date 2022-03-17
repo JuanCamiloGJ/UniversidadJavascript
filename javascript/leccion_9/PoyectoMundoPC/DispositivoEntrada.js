@@ -1,4 +1,4 @@
-class DispotivoEntrada{
+class DispositivoEntrada{
 
     constructor(tipoEntrada, marca){
 
@@ -20,6 +20,6 @@ class DispotivoEntrada{
         this._marca = marca;
     }
     toString(){
-        return `tipoEntrada: ${this.tipoEntrada}, marca: ${marca}]`
+        return `tipoEntrada: ${this.tipoEntrada}, marca: ${this.marca}]`
     }
 }

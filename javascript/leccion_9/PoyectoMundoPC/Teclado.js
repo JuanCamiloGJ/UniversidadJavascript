@@ -1,4 +1,4 @@
-class Teclado extends DispotivoEntrada{
+class Teclado extends DispositivoEntrada{
     static contadorTeclados = 0;
 
     constructor(tipoEntrada, marca){
