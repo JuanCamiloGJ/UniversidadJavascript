@@ -20,6 +20,15 @@ class Gerente extends Empleado{
 
 function imprimir(tipo){
     console.log(tipo.obtenerDetalles());
+    if(tipo instanceof Gerente){
+        console.log("Es un objeto de tipo gerente.");
+    }
+    else if(tipo instanceof Empleado){
+        console.log("Es un objeto de tipo empleado");
+    }
+    else if(tipo instanceof Object){
+        console.log("Es un objeto de tipo Object");
+    }
 }
 let gerente =new Gerente("Carlos", 5000, "Sistemas");
 let empleado = new Empleado("Juan", 6000);
