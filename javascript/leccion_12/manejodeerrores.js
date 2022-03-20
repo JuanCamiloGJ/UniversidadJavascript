@@ -1,11 +1,17 @@
- 'use strict'
-try{
+"use strict"
+let resultado = "";
 
-    let x = 10;
-    throw "Mi error";
+try{
+   
+    if(isNaN(resultado)) throw "No es un número";
+    else if( resultado ==='') throw "Es cadena vacía";
+    else if( resultado >= 0) throw "Valor positivo";
+    else if( resultado < 0) throw "valor negativo";
 }catch(error){
     console.log(error);
+    console.log(error.name);
+    console.log(error.message);
+
 }finally{
-    console.log("Termina la revision de errores");
+    console.log("Termina revisión de errores");
 }
-console.log("continuamos...");
