@@ -1,0 +1,11 @@
+
+
+   /*esto es un selector*/
+    h1{
+        color: lawngreen;
+    }
+    /* Estilos para todos los parrafos de HTML */
+    p{
+        color: white;
+        background-color: crimson;
+    }
