@@ -8,4 +8,10 @@
     p{
         color: white;
         background-color: crimson;
+        padding: 15px;
+        border: 10px solid powderblue;
+        margin: 20px;
+
+        margin: auto 80px;
+        text-align: center;
     }
