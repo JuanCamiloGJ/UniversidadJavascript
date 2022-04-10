@@ -1,0 +1,43 @@
+table{
+    /* ocupa el 100% del espacio disponible */
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid black;
+    /* colapsa los bordes dejando una especie de linea */
+    border-collapse: collapse;
+    /* nos da un espacio en los bordes */
+    /* border-spacing: 5px; */
+    padding: 5px;
+}
+caption{
+    color: red;
+    font-family: 'Trocchi', serif;
+    font-size: 46px;
+    /* ancho de la linea */
+    line-height: 70px;
+}
+th{
+    color:beige;
+    background-color: darkblue;
+
+}
+/* esta es como una especie de funcion, en el cual
+seleccionamos los tr dependiendo si son pares o impares colocando
+even o odd */
+/* renglones pares */
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+/* renglones impares */
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}
+
+/* td{
+    text-align: center;
+}
+th{
+    text-align: left;
+} */
