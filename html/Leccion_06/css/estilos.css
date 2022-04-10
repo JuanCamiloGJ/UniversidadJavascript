@@ -1,29 +1,24 @@
-h1{
-    color: darkblue;
+ol{
+    list-style: none;
+    /* aqui debemos especificar que vamos a usar nuestro contador */
+    counter-reset: contador;
 }
-ul{
-    /* no se visualiza el indice el item */
-    list-style-type: none;
-    background-color: rgb(98, 144, 160);
-    /* para mostrar nuestra lista de manera idependiente en bloque */
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+ol li{
+    /* esta parte es para incrementar nuestro contador */
+    counter-increment: contador;
 }
-li{
-    /* coloca los items de manera horizontal. */
-    float: left;
+/* el selector before  se utiliza para visualizar un texto
+previamente antes de la etiqueta, se llama con :: */
+ol li::before{
+    /* ahora se va a agregar la palabra Curso, en ves de un numero etc */
+    content: "Curso " counter(contador) " ";
+    /* conuter es una funcion que nos permitira contar cada elemento. */
+    color: orange;
 }
-/* al seleccionar las li y las a  solo aplicara 
-la estilo cuando estan en conjunto */
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
+/* hace lo mismo pero al final de cada li */
+ol li::after{
+    content: ".";
 }
-
-li a:hover{
-    background-color: darkblue;
-}
+/* 
+estos selectores se pueden colocar a cualquier otro 
+elemento como un parrafo etc */
