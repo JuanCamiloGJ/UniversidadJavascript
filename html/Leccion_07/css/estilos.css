@@ -1,7 +1,14 @@
+/* El asterisco indica que todas las propiedades van a tener
+estas caracteristicas. */
+*{
+    margin: 0;
+    padding: 0;
+}
 h1{
     color: #f72585;
 
     text-align: center;
+    margin: 15px;
 }
 h2{
     color: purple;
@@ -9,9 +16,14 @@ h2{
 p{
     color: blue;
 }
-
-div{
+/* Esto es una clase de CSS la podemos aplicar a nuestros elementos */
+.tarjeta{
     border: 10px solid darkorchid;
     background-color: beige;
     text-align: center;
+    margin: 10px 150px ;
+    padding: 15px ;
+}
+.titulo{
+    color: darkorchid;
 }
