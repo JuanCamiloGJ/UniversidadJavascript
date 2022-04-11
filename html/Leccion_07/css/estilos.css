@@ -4,7 +4,8 @@ estas caracteristicas. */
     margin: 0;
     padding: 0;
 }
-h1{
+/* identificador CSS */
+#titulo_principal{
     color: #f72585;
 
     text-align: center;
