@@ -1,0 +1,24 @@
+ol{
+    list-style: none;
+    /* aqui debemos especificar que vamos a usar nuestro contador */
+    counter-reset: contador;
+}
+ol li{
+    /* esta parte es para incrementar nuestro contador */
+    counter-increment: contador;
+}
+/* el selector before  se utiliza para visualizar un texto
+previamente antes de la etiqueta, se llama con :: */
+ol li::before{
+    /* ahora se va a agregar la palabra Curso, en ves de un numero etc */
+    content: "Curso " counter(contador) " ";
+    /* conuter es una funcion que nos permitira contar cada elemento. */
+    color: orange;
+}
+/* hace lo mismo pero al final de cada li */
+ol li::after{
+    content: ".";
+}
+/* 
+estos selectores se pueden colocar a cualquier otro 
+elemento como un parrafo etc */
